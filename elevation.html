@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+        img{ width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;}
+    </style>
+
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Components</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <nav class="topnav" id="Topnav""> 
+      </div>
+             <a href="landing.html" id ="home" class="active">Home</a>
+             <a href="data.html">Data</a>
+             <a href="comparison.html">Comparison</a> 
+             <a class = "dropdown"
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="latitude.html">Latitude</a>
+                      <a class="dropdown-item" href="longitude.html">Longitude</a>  
+                      <a class="dropdown-item" href="elevation.html">Elevation</a>
+                      <a class="dropdown-item" href="price.html">Price</a>
+              </div> 
+        </div>  
+        </nav>
+    
+ <div class="container">
+      <section class="row">
+      <div class="col-sm-8">
+      <article class="description-content">
+      <h1 class="display-8">Elevation v. Wine Price</h1>
+      <hr class="lead">
+      <img class="img-responsive" src="wineelevation.png" alt="elevation" style="width:500px; height:380px; position:relative; left:20%">
+      <p class="lead"> The elevations of the wineries were obtained using the Google Maps API. Then, a
+      linear regression was performed in order to analyze the correlation between winery elevation and 
+      wine price. There is no observed correlation between elevation and price values. The r-squared
+      value is 0.017, meaning that 1% of a wine's price is explained by the longitude of the winery.</p>
+ </div>
+ 
+  <div class="col-sm-4"
+        <article id="imageNav-area">
+          <div class="imageNav-content">
+            <h2 class="imageNav-header">Visualizations</h2>
+            <hr />
+            <div id="images">
+                <a href="latitude.html"><img src="wine1.png" alt="latitude" class="imageNav-photo" style="float:right"></a>
+                <a href="longitude.html"><img src="winelong.png" alt="longitude" class="imageNav-photo" style="float:right"></a>
+                <a href="elevation.html"><img src="wineelevation.png" alt="elevation" class="imageNav-photo" style="float:right"></a>
+                <a href="price.html"><img src="wineprice.png" alt="price" class="imageNav-photo" style="float:right"></a> 
+            </div>
+          </div>  
+        </article>  
+    </section> 
+  </div> 
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
